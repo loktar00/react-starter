@@ -1,0 +1,48 @@
+body {
+        border-top: 5px solid @secondary-brand;
+}
+
+// Remove max height so menu doesn't scroll in mobile.
+.navbar-fixed-top .navbar-collapse {
+    max-height: none;
+}
+
+.navbar-somesite {
+    background: #fff;
+    border-bottom: 2px solid @border-color;
+    margin-bottom: 20px;
+    .lh-border-radius(0);
+
+    .navbar-brand {
+        color: @somesite-brand;
+    }
+
+    .navbar-toggle {
+        .icon-bar{
+            background: @secondary-brand;
+            .lh-border-radius(0px);
+        }
+    }
+
+    .navbar-nav{
+        li:first-child > a{
+            @media (min-width: @screen-sm-min){
+                padding-left: 0;
+            }
+        }
+
+        li {
+            border-top: 2px solid @border-color;
+            
+            a{
+                &:hover, &:active, &:focus {
+                    background: transparent;
+                }
+            }
+
+            @media (min-width: @screen-sm-min){
+                border-top: none;
+            }
+        }
+    }
+}

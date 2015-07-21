@@ -1,0 +1,31 @@
+
+.default-button {
+    font-family: @base-font-family;
+    border: none;
+    padding: 5px 28px;
+    height: 34px;
+    font-weight: bold;
+    font-size: 15px;
+
+    .lh-border-radius(5px);
+    .lh-background-image(linear-gradient(to bottom, @somesite-brand 0%, darken(@somesite-brand, 7%) 100%));
+
+    .glyphicon {
+        margin-right: 6px;
+        font-size: 15px;
+    }
+}
+
+.btn-single {
+    padding: 9px 14px;
+    height: 40px;
+    .glyphicon, .fa {
+        margin-right: 0;
+        font-size: 20px;
+    }
+}
+
+.selected-button {
+    background: @button-selected;
+    color: #fff;
+}
